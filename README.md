@@ -120,7 +120,7 @@ A arquitetura da nossa solução será baseada em uma abordagem modular e escal�
 
 ### Simulação no Wokwi
 
-Para validar a proposta da arquitetura em um ambiente simulado, foi utilizado o [Wokwi](https://wokwi.com/), uma plataforma de simulação de microcontroladores. O circuito simulado incluiu:
+Para validar a proposta da arquitetura em um ambiente simulado, foi utilizado o Wokwi, uma plataforma de simulação de microcontroladores. O circuito simulado incluiu:
 
 - **ESP32 DevKit V1**
 - **Sensor DHT22** para leitura de temperatura e umidade
@@ -137,7 +137,7 @@ A leitura dos dados foi feita via porta serial, com os seguintes exemplos de sa�
 T:25.4°C, U:56%, V:1.8g, I:3.5A, Vlt:220.40V, P:771.4W, Pr:1002hPa
 ```
 
-> **Link para a simulação no Wokwi**: [clique aqui](https://wokwi.com/projects/SEU_LINK_AQUI)
+> **Link para a simulação no Wokwi**: [clique aqui](https://wokwi.com/projects/433598201475154945)
 
 ### Justificativa dos Sensores Utilizados
 
@@ -154,6 +154,9 @@ A escolha dos sensores e variáveis simuladas no código foi baseada na relevân
 - **Pressão Atmosférica (simulada):** relevante para processos pneumáticos e ambientes pressurizados. Variações anormais podem indicar vazamentos ou falhas em vedação.
 
 Essas variáveis simuladas refletem indicadores-chave em ambientes industriais e permitem demonstrar, mesmo em simulação, a viabilidade de um sistema de monitoramento inteligente.
+
+<img src="assets/circuito1.png" alt="Exemplo do circuito em funcionamento" border="0" width=60% height=40%>
+<img src="assets/circuito2.png" alt="Exemplo do circuito em funcionamento" border="0" width=60% height=40%>
 
 ### Exportação e Análise de Dados
 
@@ -182,10 +185,6 @@ python gerar_graficos.py
 > - `grafico_temperatura_umidade.png`
 > - `grafico_potencia_corrente.png`
 > - `grafico_pressao.png`
-
-### Código do ESP32 (Simulação)
-
-O código foi desenvolvido em C++ e roda no ESP32 para leitura do sensor DHT22 e geração de valores simulados para as demais variáveis. Os dados são impressos na porta serial a cada 3 segundos, representando uma coleta contínua.
 
 ## Esboço da Arquitetura da Solução
 
