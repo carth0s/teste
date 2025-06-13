@@ -155,8 +155,8 @@ A escolha dos sensores e variáveis simuladas no código foi baseada na relevân
 
 Essas variáveis simuladas refletem indicadores-chave em ambientes industriais e permitem demonstrar, mesmo em simulação, a viabilidade de um sistema de monitoramento inteligente.
 
-<img src="assets/circuito1.png" alt="Exemplo do circuito em funcionamento" border="0" width=60% height=40%>
-<img src="assets/circuito2.png" alt="Exemplo do circuito em funcionamento" border="0" width=60% height=40%>
+<img src="assets/circuito1.png" alt="Exemplo do circuito em funcionamento" border="0" width=60% height=60%>
+<img src="assets/circuito2.png" alt="Exemplo do circuito em funcionamento" border="0" width=60% height=60%>
 
 ### Exportação e Análise de Dados
 
@@ -168,12 +168,15 @@ Três gráficos principais foram produzidos com a biblioteca `matplotlib`:
 
 1. **Temperatura vs Umidade**
    - Representa a correlação entre as duas variáveis ambientais.
+<img src="assets/grafico1.png" alt="Temperatura vs Umidade" border="0" width=60% height=60%>
 
 2. **Corrente e Potência ao longo das amostras**
    - Útil para observar picos de consumo e variações de carga.
+<img src="assets/grafico2.png" alt="Corrente e Potência ao longo das amostras" border="0" width=60% height=60%>
 
 3. **Variação da Pressão Atmosférica**
    - Pode indicar mudanças ambientais ou falhas em sistemas pneumáticos.
+<img src="assets/grafico3.png" alt="Variação da Pressão Atmosférica" border="0" width=60% height=60%>
 
 Os gráficos são salvos automaticamente em formato PNG após a execução do script. Exemplo de execução:
 
